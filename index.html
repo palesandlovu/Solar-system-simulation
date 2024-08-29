@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Solar System</title>
+    <style>
+        body {margin:0};
+        #container {
+            width: 100%;
+            height:100vh;
+        }
+        #rotation-slider {
+            position :absolute;
+            top: 50px;
+            left: 10px;
+           
+            z-index: 999;        }
+        #orbit-slider {
+            position :absolute;
+            top: 120px;
+            left: 10px;
+            z-index: 999;
+        }
+        .label{
+            position: absolute;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            pointer-events: none;
+        }
+        #mercury {
+            position: absolute;
+            top: 180px;
+            left: 10px;
+            z-index: 999;
+        }
+        #venus {
+            position: absolute;
+            top: 205px;
+            left: 10px;
+            z-index: 999;
+        }
+        #earth {
+            position: absolute;
+            top: 230px;
+            left: 10px;
+            z-index: 999;
+        }
+        #mars {
+            position: absolute;
+            top: 255px;
+            left: 10px;
+            z-index: 999;
+        }
+        #jupiter {
+            position: absolute;
+            top: 280px;
+            left: 10px;
+            z-index: 999;
+        }
+        #saturn {
+            position: absolute;
+            top: 305px;
+            left: 10px;
+            z-index: 999;
+        }
+        #uranus {
+            position: absolute;
+            top: 330px;
+            left: 10px;
+            z-index: 999;
+        }
+        #neptune {
+            position: absolute;
+            top: 355px;
+            left: 10px;
+            z-index: 999;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <div class="label" style="left:10px; top: 10px;">Orbit speed</div>
+    <input type="range" min="0" max="1" step="0.1" value="0" class="slider" id="orbit-slider">
+    <div class="label" style="left:10px; top: 80px;">Rotation speed</div>
+    <input type="range" min="0" max="1" step="0.1" value="0" class="slider" id="rotation-slider">
+    <div class="label" style="left:10px; top: 150px;">View planet</div>
+    <button id ="mercury">Mercury</button>
+    <button id="venus">Venus</button>
+    <button id="earth">Earth</button>
+    <button id="mars">Mars</button>
+    <button id="jupiter">Jupiter</button>
+    <button id="saturn">Saturn</button>
+    <button id="uranus">Uranus</button>
+    <button id="neptune">Neptune</button>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
